@@ -85,6 +85,7 @@ function getAPI(input) {
 
       var current = document.querySelector(".bigcardinfo");
       current.style.border = "1px solid black";
+      current.setAttribute("class", "bigcardinfo");
       var curIcon = document.createElement("img");
       curIcon.setAttribute("src", curIconURL);
       var temph2 = document.createElement("h2");

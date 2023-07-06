@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background: linear-gradient(
+    to right,
+    rgb(5, 5, 80) 35%,
+    rgb(82, 25, 134) 65%
+  );
+  color: azure;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 200%;
+  font-weight: 700;
+}
+header:hover{
+  background: linear-gradient(
+    to right,
+    rgb(5, 5, 80) 35%,
+    rgb(255, 147, 6) 65%
+  );
+}
+header > span {
+  margin-left: 25%;
+}
+.bigcardinfo {
+  margin-top: 1%;
+  margin-right: 20%;
+  /* border: 1px solid black; */
+}
+.forecastcards > h2 {
+  margin-top: 1%;
+  font-weight: 500;
+}
+.forecastcards{
+display: flex;
+flex-direction: column;
+}
+.aside > h1 {
+  font-size: 200%;
+  margin-top: 0.5%;
+  font-weight: 700;
+}
+#query {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 5px;
+  border: 0.5px solid black;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 3%;
+  width: 100%;
+}
+#SearchBtn {
+  margin-top: 2%;
+  border: none;
+  background-color: rgb(255, 147, 6);
+  color: azure;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  border-radius: 5px;
+  width: 100%;
+}
+#SearchBtn:hover{
+  background-color:darkslateblue;
+}
+input::placeholder{
+    padding-left: 2%;
+}
+.aside{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-bottom: .5px solid black;
+    padding-top: 2%;
+    padding-bottom: 4%;
+    width: 70%;
+    margin-left: 3%;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 250px;
+    margin-right: 8.5%;
+    
+}
+.card{
+    margin-right: 1%;
+    background-color: darkslateblue;
+    color: azure;
+}
+.left{
+  width: 25%;
+  margin-left: 0;
+}
+.dashboard{
+  width: 75%;
+  margin-right: 0;
+}
+img{
+  width: 50px;
+  height: 50px;
+}
+#cities{
+  margin-top: 2%;
+  border: none;
+  background-color: rgb(115, 111, 119);
+  color: azure;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  border-radius: 5px;
+  width: 100%;
+}
+#cities:hover{
+  background-color: rgb(82, 25, 134);
+}
+#citylist{
+  width: 70%;
+  margin-left: 3%;
+}
+#clearbtn{
+  width: 70%;
+  margin-left: 3%;
+}
+#clear{
+  margin-top: 2%;
+  border: none;
+  background-color: rgb(255, 147, 6);
+  color: azure;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  border-radius: 5px;
+  width: 100%;
+}
+#clear:hover{
+  background-color: darkslateblue;
+}

@@ -15,7 +15,7 @@ var apiKey = "0fbf9f38a4fee52adb0650e9bcf0c085";
 // potential fix for if for loop is giving me trouble use the &cnt-5 for five day forecast
 // only issue with above is I dont know if the current day is included. so maybe ill have to use 6 instead of 5.
 
-// first attempt at the fetch function
+
 
 console.log(inputValue);
 console.log(searchButton);
@@ -64,6 +64,7 @@ function getAPI(input) {
     apiKey +
     "&units=imperial";
   console.log(queryURL);
+  // first attempt at the fetch function
   fetch(queryURL)
     .then(function (response) {
       return response.json();

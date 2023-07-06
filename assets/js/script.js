@@ -81,22 +81,26 @@ function getAPI(input) {
       console.log(curWeatherIcon);
       var curIconURL =
         "http://openweathermap.org/img/wn/" + curWeatherIcon + "@2x.png";
+      var currentDay = dayjs().format("YYYY-MM-DD");
 
       var current = document.querySelector(".bigcardinfo");
-      current.style.border = '1px solid black';
+      current.style.border = "1px solid black";
       var curIcon = document.createElement("img");
       curIcon.setAttribute("src", curIconURL);
       var temph2 = document.createElement("h2");
       var windh2 = document.createElement("h2");
       var humidityh2 = document.createElement("h2");
       var cityName = document.createElement("h1");
+      var currentDate = document.createElement("h3");
 
       cityName.textContent = input[0].toUpperCase() + input.slice(1);
       temph2.textContent = "Temp: " + curTemp + " °F";
       windh2.textContent = "Wind: " + curWind + " MPH";
       humidityh2.textContent = "Humidity: " + curHumidity + "%";
+      currentDate.textContent = currentDay;
 
       current.appendChild(cityName);
+      cityName.appendChild(currentDate);
       current.appendChild(curIcon);
       current.appendChild(temph2);
       current.appendChild(windh2);
@@ -126,7 +130,7 @@ function getAPI(input) {
         .then(function (nestedData) {
           console.log(nestedData);
           document.querySelector(".container").innerHTML = "";
-          document.querySelector('.daytitle').innerHTML ="";
+          document.querySelector(".daytitle").innerHTML = "";
           var titleOfForecast = document.querySelector(".daytitle");
           var forecasth2 = document.createElement("h2");
           forecasth2.textContent = "5-Day Forecast:";
@@ -192,7 +196,7 @@ function getAPI(input) {
             weatherDescription.textContent = weatherDesc;
             temph4.textContent = "Temp: " + temperature + " °F";
             windh4.textContent = "Wind: " + windSpeed + " MPH";
-            humidityh4.textContent = "Humidity: " + humidityCity + " %";
+            humidityh4.textContent = "Humidity: " + humidityCity + "%";
           }
         });
 

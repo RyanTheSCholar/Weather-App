@@ -3,6 +3,9 @@
   margin: 0;
   padding: 0;
 }
+body{
+  background-color:#FFFEEB;
+}
 header {
   background: linear-gradient(
     to right,
@@ -31,6 +34,7 @@ header > span {
 .bigcardinfo {
   margin-top: 1%;
   margin-right: 20%;
+  padding-left: 1%;
   /* border: 1px solid black; */
 }
 .forecastcards > h2 {
@@ -68,9 +72,6 @@ flex-direction: column;
 }
 #SearchBtn:hover{
   background-color:darkslateblue;
-}
-input::placeholder{
-    padding-left: 2%;
 }
 .aside{
     display: flex;
